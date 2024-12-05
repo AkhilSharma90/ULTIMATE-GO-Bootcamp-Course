@@ -1,0 +1,23 @@
+{
+ "FirstName": "Akhil",
+ "LastName": "Sharma",
+ "Email": "akhil@gmail.com",
+ "Age": 33,
+ "MonthlySalary": [
+  {
+   "Basic": 15000,
+   "HRA": 5000,
+   "TA": 2000
+  },
+  {
+   "Basic": 16000,
+   "HRA": 5000,
+   "TA": 2100
+  },
+  {
+   "Basic": 17000,
+   "HRA": 5000,
+   "TA": 2200
+  }
+ ]
+}

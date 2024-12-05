@@ -1,0 +1,16 @@
+{
+  "catlog_nodes": [
+    {
+      "product_id": "12345",
+      "quantity": 10
+    },
+    {
+      "product_id": "67890",
+      "quantity": 5
+    },
+    {
+      "product_id": "24680",
+      "quantity": 2
+    }
+  ]
+}
