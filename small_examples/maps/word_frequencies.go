@@ -9,6 +9,13 @@ func main() {
 	text := "go is awesome go is fun"
 	words := strings.Fields(text)
 	wordCount := make(map[string]int)
+
+	// //map is called wordCount
+	// "go": 2
+	// "is": 2
+	// "awesome": 1
+	// "fun": 1
+
 	// Count word frequencies
 	for i := 0; i < len(words); i++ {
 		word := words[i]

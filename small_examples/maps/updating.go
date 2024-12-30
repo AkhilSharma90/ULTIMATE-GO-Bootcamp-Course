@@ -3,8 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	m := make(map[string]int)
-	m["Alice"] = 25 // Add a key-value pair
-	m["Bob"] = 30   // Add another pair
-	fmt.Println(m)  // Output: map[Alice:25 Bob:30]
+	// Define a map with string keys and integer values
+	prices := map[string]int{
+		"apple":  100,
+		"banana": 50,
+		"orange": 80,
+	}
+
+	// Print the original map
+	fmt.Println("Original Prices:", prices)
+
+	// Update the price of an "apple"
+	prices["apple"] = 120
+
+	// Update the price of a "banana"
+	prices["banana"] = 60
+
+	// Print the updated map
+	fmt.Println("Updated Prices:", prices)
 }

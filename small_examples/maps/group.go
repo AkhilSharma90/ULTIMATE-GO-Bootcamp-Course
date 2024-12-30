@@ -9,10 +9,17 @@ func main() {
 		"Charlie": 25,
 	}
 	ageGroups := make(map[int][]string)
+
+	//ageGroups
+	//25: alice, charlie
+	//30: bob
+
 	// Group people by age
 	for name := range people {
 		age := people[name]
+
 		ageGroups[age] = append(ageGroups[age], name)
+
 	}
 	// Collect keys in a slice
 	keys := []int{}

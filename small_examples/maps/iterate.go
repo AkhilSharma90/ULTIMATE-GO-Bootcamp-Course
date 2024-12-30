@@ -9,7 +9,10 @@ func main() {
 		"Charlie": 35,
 	}
 	// Collect keys in a slice
+	//transferring values from a map into a slice
 	keys := []string{}
+
+	//alice, bob, charlie
 	for key := range m {
 		keys = append(keys, key)
 	}
