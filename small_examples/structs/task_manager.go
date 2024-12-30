@@ -10,7 +10,7 @@ type Task struct {
 
 func main() {
 	tasks := []Task{
-		{Title: "Learn Go", Description: "Complete Go tutorials", Completed: false},
+		{Title: "Learn Go", Description: "Complete Go tutorials", Completed: true},
 		{Title: "Build a project", Description: "Work on a Go project", Completed: false},
 	}
 	for i, task := range tasks {
