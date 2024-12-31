@@ -1,3 +1,7 @@
+// func(parameters) returnType {
+//     // Function body
+// }
+
 package main
 
 import "fmt"
