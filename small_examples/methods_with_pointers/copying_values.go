@@ -7,9 +7,8 @@ type Point struct {
 }
 
 // Method to copy values from another point
-func (p Point) CopyFrom(other Point) {
-	p.X = other.X
-	p.Y = other.Y
+func (p *Point) CopyFrom(other *Point) {
+	p.X, p.Y = other.X, other.Y
 }
 func main() {
 	p1 := Point{X: 1, Y: 2}

@@ -12,6 +12,7 @@ func (c *Config) SetDefaults() {
 	c.Port = 8080
 	c.Enabled = true
 }
+
 func main() {
 	cfg := Config{}
 	cfg.SetDefaults()
