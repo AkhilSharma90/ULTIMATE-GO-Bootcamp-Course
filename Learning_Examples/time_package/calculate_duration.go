@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	start := time.Date(2024, 11, 19, 14, 0, 0, 0, time.UTC)
+	start := time.Date(2025, 01, 1, 14, 0, 0, 0, time.UTC)
 	end := time.Now()
 
 	duration := end.Sub(start)
