@@ -7,13 +7,13 @@ type Point struct {
 }
 
 // Method to move the point along X-axis
-func (p Point) MoveX(dx int) Point {
+func (p *Point) MoveX(dx int) *Point {
 	p.X += dx
 	return p
 }
 
 // Method to move the point along Y-axis
-func (p Point) MoveY(dy int) Point {
+func (p *Point) MoveY(dy int) *Point {
 	p.Y += dy
 	return p
 }
