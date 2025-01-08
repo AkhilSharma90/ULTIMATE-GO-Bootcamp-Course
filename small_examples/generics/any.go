@@ -1,4 +1,4 @@
-func PrintValueT any {
+func PrintValueT int {
     fmt.Println(value)
 }
 func main() {
