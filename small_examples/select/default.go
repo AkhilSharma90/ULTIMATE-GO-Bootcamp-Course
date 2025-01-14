@@ -8,9 +8,10 @@ import (
 func main() {
 	ch := make(chan string)
 	go func() {
-		time.Sleep(2 * time.Second)
+
 		ch <- "Data ready"
 	}()
+	time.Sleep(1 * time.Second)
 	select {
 	case msg := <-ch:
 		fmt.Println(msg)

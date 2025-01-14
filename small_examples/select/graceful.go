@@ -17,7 +17,7 @@ func worker(ch chan int, quit chan bool) {
 	}
 }
 func main() {
-	ch := make(chan int)
+	ch := make(chan int, 3)
 	quit := make(chan bool)
 	go worker(ch, quit)
 	for i := 1; i <= 3; i++ {
@@ -25,4 +25,5 @@ func main() {
 		time.Sleep(500 * time.Millisecond)
 	}
 	quit <- true
+	time.Sleep(1 * time.Second)
 }

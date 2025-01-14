@@ -13,5 +13,5 @@ func main() {
 	go delayedPrint("This prints after 1 second", 1*time.Second)
 	go delayedPrint("This prints after 2 seconds", 2*time.Second)
 	fmt.Println("Main function continues immediately")
-	time.Sleep(3 * time.Second)
+	// time.Sleep(3 * time.Second)
 }

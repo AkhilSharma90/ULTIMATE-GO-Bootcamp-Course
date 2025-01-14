@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func sendData(ch chan<- int) { // Send-only channel
 	ch <- 100
@@ -13,5 +16,5 @@ func main() {
 	go sendData(ch)
 	go receiveData(ch)
 	// Allow goroutines to complete
-	select {}
+	time.Sleep(1 * time.Second)
 }
